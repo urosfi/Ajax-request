@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class="jumbotron text-center">
+            <h2>Accounts</h2>
+            <button class="btn btn-primary" id="A">Accounts</button>
+            <button class="btn btn-secondary" id="B">New Account</button>
+            <button class="btn btn-warning" id="C">Edit/Delete Account</button>
+         </div>
+<div class="container">
+
+
+   
+    <div class="row">
+        <div class="col-10 offset-1 ">
+            <div class="row" id="Accview">
+                <div class="col-10 offset-1 text-center">
+                <table class="table" >
+                  <thead>
+                     <tr>
+                             <th>ID</th>
+                            <th>Name</th>
+                            <th>Deposit</th>
+                            <th>Card Name</th>
+                        </tr>
+                      
+                    </thead>
+       
+                    <tbody id="main_body" >
+               
+                    </tbody>
+            </table>
+        </div>
+    </div>
+       
+
+    <div class="row " id="save_account_view" >
+    <div class="col-10 offset-1 ">
+           
+                <input type="text" placeholder="Name" name="name_save" class="form-control"><br>
+                <input type="text" placeholder="Deposit" name="deposit_save"      class="form-control"><br>
+                <input type="text" placeholder="card_name" name="card_name_save" class="form-control"><br>
+                <button  class="btn btn-primary form-control" id="btnsave">Save Account</button>
+            
+     
+    </div>
+</div>
+<div class="row">
+    <div class="col-10 offset-1 ">
+        <div class="row" id="Accview_delete">
+            <div class="col-10 offset-1 text-center">
+            <table class="table" >
+              <thead>
+                 <tr>
+                         <th>ID</th>
+                        <th>Name</th>
+                        <th>Deposit</th>
+                        <th>Card Name</th>
+                    </tr>
+                  
+                </thead>
+   
+                <tbody id="main_body_delete" >
+           
+                </tbody>
+        </table>
+    </div>
+<div class="row " id="edit_delete_view" >
+    <div class="col-10 offset-1 text-center">
+           <h2>Save</h2>
+                <input type="text" placeholder="Name" name="edit_name_save" class="form-control"><br>
+                <input type="text" placeholder="Deposit" name="edit_deposit_save"      class="form-control"><br>
+                <input type="text" placeholder="card_name" name="edit_card_name_save" class="form-control"><br>
+                <button  class="btn btn-primary form-control" id="edit_btn_save">Save  Edited Account</button>
+            
+     
+    </div>
+</div>
+
+</div>
+
+
+
+
+</div>
+<script src="JS/DB.js"></script>
+<script src="JS/main.js"></script>
+</body>
+</html>
